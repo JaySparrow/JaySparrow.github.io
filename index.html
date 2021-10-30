@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <table style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
 
@@ -34,7 +34,7 @@
               <a href="mailto:yul139@eng.ucsd.edu">Email</a> &nbsp/&nbsp
               <a href="data/docs/CV_YuhanLiu.pdf">CV</a> &nbsp/&nbsp
               <a href="https://scholar.google.com/citations?user=iJf4GawAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
-              <a href="https://cn.linkedin.com/in/yuhan-liu-913662142">LinkdIn</a> &nbsp/&nbsp
+              <a href="https://cn.linkedin.com/in/yuhan-liu-913662142">LinkedIn</a> &nbsp/&nbsp
               <a href="https://github.com/JaySparrow">Github</a>
             </p>
           </td>
@@ -43,7 +43,158 @@
           </td>
         </tr>
       </tbody></table>
+      <!-- /bio -->
       
+      <!-- research overview -->
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr>
+          <td style="padding:20px;width:100%;vertical-align:middle">
+            <heading>Research</heading>
+            <p>
+              My research interests lie in robotics and machine learning. I'd like to generalize policy learning algorithms to unseen environments and multi-stage tasks by leveraging expert demonstrations.
+            </p>
+          </td>
+        </tr>
+      </tbody></table>
+      <!-- /research overview -->
+
+      <!-- research projects -->
+      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+        <!-- physics aware -->
+        <tr onmouseout="physicsaware_stop()" onmouseover="physicsaware_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle;">
+            <div class="one">
+              <div class="two" id='physicsaware_video'>
+                <video width="240" style="position:relative;top:15%" muted autoplay loop>
+                <source src="data/videos/physics_aware.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="two" id='physicsaware_image' style="position:relative;top:25%">
+                <img src='data/imgs/physics_aware.png' width="240">
+              </div>
+            </div>
+            <script type="text/javascript">
+              function physicsaware_start() {
+                document.getElementById('physicsaware_image').style.opacity = "0";
+                document.getElementById('physicsaware_video').style.opacity = "1";
+              }
+              function physicsaware_stop() {
+                document.getElementById('physicsaware_image').style.opacity = "1";
+                document.getElementById('physicsaware_video').style.opacity = "0";
+              }
+              physicsaware_stop()
+            </script>
+          </td>
+
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <papertitle>Learning Physics-Aware Rearrangement in Indoor Scenes</papertitle>
+            <br>
+            <a href="https://sites.google.com/site/mengsong1130/home?authuser=0">Meng Song</a>,
+            <strong>Yuhan Liu</strong>,
+            <a href="https://sites.google.com/a/eng.ucsd.edu/zhengqinli">Zhengqin Li</a>, 
+            <a href="https://cseweb.ucsd.edu/~mkchandraker/">Manmohan Chandraker</a>
+            <br>
+            submitted to <em>ICRA</em>, 2022
+            <br>
+            <a href="https://drive.google.com/file/d/1-2NJ35jqv4NwtYRVIvB9A8M4U1vlcHBf/view?usp=sharing">video</a>
+            /
+            <a href="https://drive.google.com/file/d/11T4KMWTquGQ9hrhCPa4jq4VfC_tpRlEu/view?usp=sharing">paper</a>
+            <p></p>
+            <p>Two challenging tasks for testing agent's knowledge of friction and mass, as well as a novel energy-aware reward function to achieve the tasks.</p>
+          </td>
+        </tr> 
+        <!-- /physics aware -->
+
+        <!-- openrooms -->
+        <tr onmouseout="openrooms_stop()" onmouseover="openrooms_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle;">
+            <div class="one">
+              <div class="two" id='openrooms_video'>
+                <video width="240" style="position:relative;top:5%" muted autoplay loop>
+                <source src="data/videos/openrooms.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="two" id='openrooms_image' style="position:relative;top:0%">
+                <img src='data/imgs/openrooms.png' width="240">
+              </div>
+            </div>
+            <script type="text/javascript">
+              function openrooms_start() {
+                document.getElementById('openrooms_image').style.opacity = "0";
+                document.getElementById('openrooms_video').style.opacity = "1";
+              }
+              function openrooms_stop() {
+                document.getElementById('openrooms_image').style.opacity = "1";
+                document.getElementById('openrooms_video').style.opacity = "0";
+              }
+              openrooms_stop()
+            </script>
+          </td>
+
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <papertitle>OpenRooms: An Open Framework for Photorealistic Indoor Scene Datasets</papertitle>
+            <br>
+            <a href="https://sites.google.com/a/eng.ucsd.edu/zhengqinli">Zhengqin Li</a>,
+            Ting-Wei Yu,
+            Shen Sang,
+            Sarah Wang,
+            <a href="https://sites.google.com/site/mengsong1130/home?authuser=0">Meng Song</a>,
+            <strong>Yuhan Liu</strong>,
+            <a href="https://yuyingyeh.github.io/">Yu-Ying Yeh</a>,
+            <a href="https://jerrypiglet.github.io/">Rui Zhu</a>,
+            <a href="https://scholar.google.com/citations?user=v19p_0oAAAAJ&hl=en">Nitesh Gundavarapu</a>,
+            Jia Shi,
+            <a href="http://cseweb.ucsd.edu/~bisai/">Sai Bi</a>,
+            <a href="https://cseweb.ucsd.edu/~zex014/">Zexiang Xu</a>,
+            <a href="https://kovenyu.com/">Hong-Xing Yu</a>,
+            <a href="http://www.kalyans.org/">Kalyan Sunkavalli</a>,
+            <a href="http://www.miloshasan.net/">Miloš Hašan</a>,
+            <a href="http://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>,
+            <a href="https://cseweb.ucsd.edu/~mkchandraker/">Manmohan Chandraker</a>
+            <br>
+            <em>CVPR</em>, 2021 (Oral)
+            <br>
+            <a href="https://www.google.com/url?q=https%3A%2F%2Fucsd-openrooms.github.io%2F&sa=D&sntz=1&usg=AFQjCNETYtx-rx5N-ZXs81PJAAuNYHYGoQ">project page</a>
+            /
+            <a href="https://www.google.com/url?q=https%3A%2F%2Farxiv.org%2Fabs%2F2007.12868&sa=D&sntz=1&usg=AFQjCNEqtWEhKtQWi1aJCO8l6Kr8NMm63A">arXiv</a>
+            <p></p>
+            <p>A photorealistic indoor scene datasets with high-quality ground truth SVBRDF and spatially-varying lighting, which can be easily applied to training embodied AI for learning physical properties like mass, friction, and lighting.</p>
+          </td>
+        </tr> 
+        <!-- /openrooms -->        
+        <br>
+        <!-- stop sign -->
+        <tr>
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <img src='data/imgs/stop_sign.png' width="240">
+            </div>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <papertitle>Auto-calibration Method Using Stop Signs for Urban Autonomous Driving Applications</papertitle>
+            <br>
+            <strong>Yuhan Liu*</strong>,
+            <a href="https://y8han.github.io">Yunhai Han*</a>,
+            <a href="http://avl.ucsd.edu/dfpazr/index.html">David Paz</a>,
+            <a href="http://www.hichristensen.net/">Henrik Christensen</a>
+            <br>
+            <em>ICRA</em>, 2021
+            <br>
+            <a href="http://avl.ucsd.edu/?page_id=87">project page</a>
+            /
+            <a href="https://arxiv.org/abs/2010.07441">arXiv</a>
+            <p></p>
+            <p>An end-to-end pipeline for continuously updating intrinsic parameters of on-board cameras by recognition of traffic signs.</p>
+          </td>
+        </tr>
+        <!-- /stop sign -->
+
+      </tbody></table>
+      <!-- /research projects -->
+
       <!-- attribution -->
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
         <tr>
@@ -55,6 +206,7 @@
           </td>
         </tr>
       </tbody></table>
+      <!-- /attribution -->
 
       </td>
     </tr>
