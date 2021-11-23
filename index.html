@@ -107,6 +107,53 @@
         </tr> 
         <!-- /physics aware -->
 
+        <!-- avl -->
+        <tr onmouseout="avl_stop()" onmouseover="avl_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle;">
+            <div class="one">
+              <div class="two" id='avl_hierarchy'>
+                <img src='data/imgs/avl_hierarchy.png' width="240">
+              </div>
+              <div class="two" id='avl_mail'>
+                <img src='data/imgs/avl_mail.png' width="240">
+              </div>
+            </div>
+            <script type="text/javascript">
+              function avl_start() {
+                document.getElementById('avl_mail').style.opacity = "0";
+                document.getElementById('avl_hierarchy').style.opacity = "1";
+              }
+              function avl_stop() {
+                document.getElementById('avl_mail').style.opacity = "1";
+                document.getElementById('avl_hierarchy').style.opacity = "0";
+              }
+              avl_stop()
+            </script>
+          </td>
+
+          <td style="padding:20px;width:75%;vertical-align:middle">
+            <papertitle>Autonomous Vehicles for Micro-mobility</papertitle>
+            <br>
+            <a href="http://www.hichristensen.net/">Henrik Christensen</a>,
+            <a href="http://avl.ucsd.edu/dfpazr/index.html">David Paz</a>,
+            <a href="https://henryzhangzhy.github.io/">Hengyuan Zhang</a>,
+            <a href="https://www.dominique-meyer.com/">Dominique Meyer</a>,
+            <a href="https://xhwind.github.io/">Hao Xiang</a>,
+            <a href="https://y8han.github.io">Yunhai Han</a>,
+            <strong>Yuhan Liu</strong>,
+            <a href="https://www.linkedin.com/in/andrew-liang-2022/">Andrew Liang</a>, 
+            <a href="https://www.linkedin.com/in/jessicazz/">Zheng Zhong</a>,
+            Shiqi Tang
+            <br>
+            <em>Autonomous Intelligent Systems (AIS)</em>, 2021
+            <br>
+            <a href="https://rdcu.be/cBP4T">Springer</a>
+            <p></p>
+            <p>A thorough documentation of the research effort of design, prototyping, and evaluation of a full stack autonomous vehicle for micro-mobility in UCSD. A valuable overview of a state-of-the-art autonomous driving study. A intriguing guidance for future research directions.</p>
+          </td>
+        </tr> 
+        <!-- /avl -->
+
         <!-- openrooms -->
         <tr onmouseout="openrooms_stop()" onmouseover="openrooms_start()">
           <td style="padding:20px;width:25%;vertical-align:middle;">
